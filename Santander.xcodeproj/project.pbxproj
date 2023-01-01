@@ -48,15 +48,13 @@
 		37CA828A28AA675B000236D7 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA828928AA675B000236D7 /* AppInfoViewController.swift */; };
 		37DE0FA22864902400E5EBBC /* FilePreviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE0FA12864902400E5EBBC /* FilePreviewDataSource.swift */; };
 		37ECADA728B23ECC00B95733 /* ImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECADA628B23ECB00B95733 /* ImageViewerController.swift */; };
+		6F175A50296240820093004D /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F175A4E296240820093004D /* vm_unaligned_copy_switch_race.c */; };
+		6F175A52296242950093004D /* WriteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F175A51296242950093004D /* WriteFile.swift */; };
 		CE0D0B002906D6F300D17307 /* GoToItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D0AFF2906D6F300D17307 /* GoToItem.swift */; };
 		CE0E513028D4D03300E9D611 /* AssetCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E512F28D4D03300E9D611 /* AssetCatalogViewController.swift */; };
-		CE13D1DD28D3572000F5C833 /* RootHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13D1DC28D3572000F5C833 /* RootHelper.swift */; };
 		CE1F1F7028F7211700E44DF2 /* PathTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F1F6F28F7211700E44DF2 /* PathTransitioning.swift */; };
 		CE1FDA2A28F20302000A16BE /* AssetCatalogGridPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1FDA2928F20302000A16BE /* AssetCatalogGridPreviewCell.swift */; };
 		CE2D13D8291D8EE50023F16D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = CE2D13D7291D8EE50023F16D /* ArgumentParser */; };
-		CE2D13DA291D8F210023F16D /* FSOperations in Frameworks */ = {isa = PBXBuildFile; productRef = CE2D13D9291D8F210023F16D /* FSOperations */; };
-		CE2D13DC291D8F460023F16D /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D13DB291D8F460023F16D /* Commands.swift */; };
-		CE2D13DE291D8F8A0023F16D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = CE2D13DD291D8F8A0023F16D /* ArgumentParser */; };
 		CE37904628DB44C300124029 /* AssetCatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37904528DB44C300124029 /* AssetCatalogCell.swift */; };
 		CE37904A28DB523500124029 /* AssetCatalogSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37904928DB523500124029 /* AssetCatalogSectionHeader.swift */; };
 		CE42B204290ABB6400FD9AC9 /* AssetCatalogSidebarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42B203290ABB6400FD9AC9 /* AssetCatalogSidebarListView.swift */; };
@@ -74,9 +72,6 @@
 		CECB3A0C28E330BC00328434 /* AssetCatalogDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB3A0B28E330BC00328434 /* AssetCatalogDetailsView.swift */; };
 		CECF6EDA28C37F660080B805 /* FontViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF6ED928C37F660080B805 /* FontViewerController.swift */; };
 		CEDAF42028C36B2900DF03E6 /* Runestone in Frameworks */ = {isa = PBXBuildFile; productRef = CEDAF41F28C36B2900DF03E6 /* Runestone */; };
-		CEE06A37291E1E0A00DA8C75 /* CompressionWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = CEE06A36291E1E0A00DA8C75 /* CompressionWrapper */; };
-		CEF032BB291ED00700B6F768 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF032B8291ED00700B6F768 /* Extensions.swift */; };
-		CEF032BD291ED00700B6F768 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF032BA291ED00700B6F768 /* main.swift */; };
 		CEF54FF528C3D4E30078A146 /* FontInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF54FF428C3D4E30078A146 /* FontInformationViewController.swift */; };
 		CEFF556129153B9B002C1B99 /* DiffableDataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF556029153B9B002C1B99 /* DiffableDataSourceItem.swift */; };
 /* End PBXBuildFile section */
@@ -138,12 +133,14 @@
 		37CA828928AA675B000236D7 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		37DE0FA12864902400E5EBBC /* FilePreviewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewDataSource.swift; sourceTree = "<group>"; };
 		37ECADA628B23ECB00B95733 /* ImageViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerController.swift; sourceTree = "<group>"; };
+		6F175A4D296240810093004D /* Santander-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Santander-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F175A4E296240820093004D /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_unaligned_copy_switch_race.c; sourceTree = "<group>"; };
+		6F175A4F296240820093004D /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
+		6F175A51296242950093004D /* WriteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteFile.swift; sourceTree = "<group>"; };
 		CE0D0AFF2906D6F300D17307 /* GoToItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToItem.swift; sourceTree = "<group>"; };
 		CE0E512F28D4D03300E9D611 /* AssetCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCatalogViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
-		CE13D1DC28D3572000F5C833 /* RootHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelper.swift; sourceTree = "<group>"; };
 		CE1F1F6F28F7211700E44DF2 /* PathTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTransitioning.swift; sourceTree = "<group>"; };
 		CE1FDA2928F20302000A16BE /* AssetCatalogGridPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCatalogGridPreviewCell.swift; sourceTree = "<group>"; };
-		CE2D13DB291D8F460023F16D /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
 		CE33E5502900166000DB4D44 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 		CE37904528DB44C300124029 /* AssetCatalogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetCatalogCell.swift; sourceTree = "<group>"; };
 		CE37904928DB523500124029 /* AssetCatalogSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCatalogSectionHeader.swift; sourceTree = "<group>"; };
@@ -155,11 +152,8 @@
 		CE7E02DE290006C70046A7D4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		CE7E02DF290006C70046A7D4 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		CEB0566228F156F500B71017 /* BaseLayoutAnchorSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLayoutAnchorSupporting.swift; sourceTree = "<group>"; };
-		CEC433C028FF20B400C18BD8 /* RootHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = RootHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECB3A0B28E330BC00328434 /* AssetCatalogDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCatalogDetailsView.swift; sourceTree = "<group>"; };
 		CECF6ED928C37F660080B805 /* FontViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewerController.swift; sourceTree = "<group>"; };
-		CEF032B8291ED00700B6F768 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		CEF032BA291ED00700B6F768 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CEF54FF428C3D4E30078A146 /* FontInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInformationViewController.swift; sourceTree = "<group>"; };
 		CEFF556029153B9B002C1B99 /* DiffableDataSourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,16 +172,6 @@
 				CE7E02E1290006C70046A7D4 /* CoreServices.framework in Frameworks */,
 				CEA33B37291619EB00DD7BAC /* ApplicationsWrapper in Frameworks */,
 				CEA33B3B291619EB00DD7BAC /* CompressionWrapper in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEC433BD28FF20B400C18BD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE2D13DE291D8F8A0023F16D /* ArgumentParser in Frameworks */,
-				CE2D13DA291D8F210023F16D /* FSOperations in Frameworks */,
-				CEE06A37291E1E0A00DA8C75 /* CompressionWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,15 +225,18 @@
 				CE0D0AFF2906D6F300D17307 /* GoToItem.swift */,
 				375CF898289C4FF000BB7C60 /* PathMetadata.swift */,
 				37963F122869C96C00C4B72A /* PathType.swift */,
+				6F175A4E296240820093004D /* vm_unaligned_copy_switch_race.c */,
+				6F175A4F296240820093004D /* vm_unaligned_copy_switch_race.h */,
 				375CF89C289CF3A600BB7C60 /* Permissions.swift */,
 				3713292428B60163009E4AEA /* ImageMetadata.swift */,
 				374ECDC62875A3710066E9DD /* Preferences */,
 				37C6E0C928662C6800BDDA16 /* PathsSortMethods.swift */,
 				37963F16286A0F0B00C4B72A /* DirectoryMonitor.swift */,
-				CE13D1DC28D3572000F5C833 /* RootHelper.swift */,
 				CE42E24B291A920400187333 /* LoadingValueState.swift */,
 				CE1F1F6F28F7211700E44DF2 /* PathTransitioning.swift */,
 				CEFF556029153B9B002C1B99 /* DiffableDataSourceItem.swift */,
+				6F175A4D296240810093004D /* Santander-Bridging-Header.h */,
+				6F175A51296242950093004D /* WriteFile.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -283,7 +270,6 @@
 			children = (
 				CE33E5502900166000DB4D44 /* .github */,
 				3789B5DE28622B7A00058688 /* Santander */,
-				CEC433C128FF20B400C18BD8 /* RootHelper */,
 				3789B5DD28622B7A00058688 /* Products */,
 				CE7E02DD290006C70046A7D4 /* Frameworks */,
 				375D568C28A5B01600E25591 /* entitlements.plist */,
@@ -295,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				3789B5DC28622B7A00058688 /* Santander.app */,
-				CEC433C028FF20B400C18BD8 /* RootHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,16 +353,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CEC433C128FF20B400C18BD8 /* RootHelper */ = {
-			isa = PBXGroup;
-			children = (
-				CEF032B8291ED00700B6F768 /* Extensions.swift */,
-				CEF032BA291ED00700B6F768 /* main.swift */,
-				CE2D13DB291D8F460023F16D /* Commands.swift */,
-			);
-			path = RootHelper;
-			sourceTree = "<group>";
-		};
 		CEF54FF228C3D4CE0078A146 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,29 +392,6 @@
 			productReference = 3789B5DC28622B7A00058688 /* Santander.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEC433BF28FF20B400C18BD8 /* RootHelper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEC433C428FF20B400C18BD8 /* Build configuration list for PBXNativeTarget "RootHelper" */;
-			buildPhases = (
-				CEC433BC28FF20B400C18BD8 /* Sources */,
-				CEC433BD28FF20B400C18BD8 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE7E02D728FFF8020046A7D4 /* PBXTargetDependency */,
-				CE7E02C528FFF44E0046A7D4 /* PBXTargetDependency */,
-			);
-			name = RootHelper;
-			packageProductDependencies = (
-				CE2D13D9291D8F210023F16D /* FSOperations */,
-				CE2D13DD291D8F8A0023F16D /* ArgumentParser */,
-				CEE06A36291E1E0A00DA8C75 /* CompressionWrapper */,
-			);
-			productName = RootHelper;
-			productReference = CEC433C028FF20B400C18BD8 /* RootHelper */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -451,10 +403,7 @@
 				TargetAttributes = {
 					3789B5DB28622B7A00058688 = {
 						CreatedOnToolsVersion = 13.4.1;
-						LastSwiftMigration = 1410;
-					};
-					CEC433BF28FF20B400C18BD8 = {
-						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -477,7 +426,6 @@
 			projectRoot = "";
 			targets = (
 				3789B5DB28622B7A00058688 /* Santander */,
-				CEC433BF28FF20B400C18BD8 /* RootHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -545,40 +493,20 @@
 				37198B9C28721275000C8CDF /* Themes.swift in Sources */,
 				37C6E0D028673AFF00BDDA16 /* Search.swift in Sources */,
 				375CF89D289CF3A600BB7C60 /* Permissions.swift in Sources */,
-				CE13D1DD28D3572000F5C833 /* RootHelper.swift in Sources */,
+				6F175A50296240820093004D /* vm_unaligned_copy_switch_race.c in Sources */,
 				CE0D0B002906D6F300D17307 /* GoToItem.swift in Sources */,
 				CE42B204290ABB6400FD9AC9 /* AssetCatalogSidebarListView.swift in Sources */,
 				37CA828A28AA675B000236D7 /* AppInfoViewController.swift in Sources */,
 				37ECADA728B23ECC00B95733 /* ImageViewerController.swift in Sources */,
 				3771D37F2862493E00E200B6 /* PathInformationTableViewController.swift in Sources */,
 				37198B9A28721069000C8CDF /* TextEditorThemeSettingsViewController.swift in Sources */,
+				6F175A52296242950093004D /* WriteFile.swift in Sources */,
 				375CF899289C4FF000BB7C60 /* PathMetadata.swift in Sources */,
 				3789B5E228622B7A00058688 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEC433BC28FF20B400C18BD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEF032BD291ED00700B6F768 /* main.swift in Sources */,
-				CE2D13DC291D8F460023F16D /* Commands.swift in Sources */,
-				CEF032BB291ED00700B6F768 /* Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE7E02C528FFF44E0046A7D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = CE7E02C428FFF44E0046A7D4 /* FSOperations */;
-		};
-		CE7E02D728FFF8020046A7D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = CE7E02D628FFF8020046A7D4 /* AssetCatalogWrapper */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3789B5EA28622B7C00058688 /* LaunchScreen.storyboard */ = {
@@ -714,7 +642,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L9735M962H;
+				DEVELOPMENT_TEAM = M485NQ89DK;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Santander/Info.plist;
@@ -735,10 +663,11 @@
 					IOKit,
 				);
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.serena.santander;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mineek.santander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Santander/Other/External/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "Santander/Other/Santander-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -753,7 +682,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L9735M962H;
+				DEVELOPMENT_TEAM = M485NQ89DK;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Santander/Info.plist;
@@ -774,48 +703,11 @@
 					IOKit,
 				);
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.serena.santander;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mineek.santander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Santander/Other/External/**";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CEC433C528FF20B400C18BD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L9735M962H;
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				EXECUTABLE_SUFFIX = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACH_O_TYPE = mh_execute;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CEC433C628FF20B400C18BD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L9735M962H;
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				EXECUTABLE_SUFFIX = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACH_O_TYPE = mh_execute;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Santander/Other/Santander-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -842,15 +734,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEC433C428FF20B400C18BD8 /* Build configuration list for PBXNativeTarget "RootHelper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEC433C528FF20B400C18BD8 /* Debug */,
-				CEC433C628FF20B400C18BD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -863,14 +746,6 @@
 			};
 		};
 		CEA33B35291619EB00DD7BAC /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		CED78C4628FDEC610097D2C5 /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
 			requirement = {
@@ -893,26 +768,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE2D13D6291D8EE50023F16D /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
-		};
-		CE2D13D9291D8F210023F16D /* FSOperations */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEA33B35291619EB00DD7BAC /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = FSOperations;
-		};
-		CE2D13DD291D8F8A0023F16D /* ArgumentParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE2D13D6291D8EE50023F16D /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
-			productName = ArgumentParser;
-		};
-		CE7E02C428FFF44E0046A7D4 /* FSOperations */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CED78C4628FDEC610097D2C5 /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = FSOperations;
-		};
-		CE7E02D628FFF8020046A7D4 /* AssetCatalogWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CED78C4628FDEC610097D2C5 /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = AssetCatalogWrapper;
 		};
 		CEA33B36291619EB00DD7BAC /* ApplicationsWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -943,11 +798,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CEDAF41E28C36B2900DF03E6 /* XCRemoteSwiftPackageReference "Runestone" */;
 			productName = Runestone;
-		};
-		CEE06A36291E1E0A00DA8C75 /* CompressionWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEA33B35291619EB00DD7BAC /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = CompressionWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
