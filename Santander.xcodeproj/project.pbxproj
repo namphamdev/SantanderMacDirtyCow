@@ -48,8 +48,8 @@
 		37CA828A28AA675B000236D7 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA828928AA675B000236D7 /* AppInfoViewController.swift */; };
 		37DE0FA22864902400E5EBBC /* FilePreviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE0FA12864902400E5EBBC /* FilePreviewDataSource.swift */; };
 		37ECADA728B23ECC00B95733 /* ImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECADA628B23ECB00B95733 /* ImageViewerController.swift */; };
-		6F175A50296240820093004D /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F175A4E296240820093004D /* vm_unaligned_copy_switch_race.c */; };
 		6F175A52296242950093004D /* WriteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F175A51296242950093004D /* WriteFile.swift */; };
+		6F9AA81B2962E7DB00BABAC2 /* poc.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AA81A2962E7DA00BABAC2 /* poc.m */; };
 		CE0D0B002906D6F300D17307 /* GoToItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D0AFF2906D6F300D17307 /* GoToItem.swift */; };
 		CE0E513028D4D03300E9D611 /* AssetCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E512F28D4D03300E9D611 /* AssetCatalogViewController.swift */; };
 		CE1F1F7028F7211700E44DF2 /* PathTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F1F6F28F7211700E44DF2 /* PathTransitioning.swift */; };
@@ -133,10 +133,10 @@
 		37CA828928AA675B000236D7 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		37DE0FA12864902400E5EBBC /* FilePreviewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewDataSource.swift; sourceTree = "<group>"; };
 		37ECADA628B23ECB00B95733 /* ImageViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerController.swift; sourceTree = "<group>"; };
-		6F175A4D296240810093004D /* Santander-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Santander-Bridging-Header.h"; sourceTree = "<group>"; };
-		6F175A4E296240820093004D /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_unaligned_copy_switch_race.c; sourceTree = "<group>"; };
-		6F175A4F296240820093004D /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
 		6F175A51296242950093004D /* WriteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteFile.swift; sourceTree = "<group>"; };
+		6F9AA8192962E7DA00BABAC2 /* poc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poc.h; sourceTree = "<group>"; };
+		6F9AA81A2962E7DA00BABAC2 /* poc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poc.m; sourceTree = "<group>"; };
+		6F9AA81D2962E9E300BABAC2 /* Santander-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Santander-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE0D0AFF2906D6F300D17307 /* GoToItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToItem.swift; sourceTree = "<group>"; };
 		CE0E512F28D4D03300E9D611 /* AssetCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCatalogViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		CE1F1F6F28F7211700E44DF2 /* PathTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTransitioning.swift; sourceTree = "<group>"; };
@@ -225,17 +225,17 @@
 				CE0D0AFF2906D6F300D17307 /* GoToItem.swift */,
 				375CF898289C4FF000BB7C60 /* PathMetadata.swift */,
 				37963F122869C96C00C4B72A /* PathType.swift */,
-				6F175A4E296240820093004D /* vm_unaligned_copy_switch_race.c */,
-				6F175A4F296240820093004D /* vm_unaligned_copy_switch_race.h */,
 				375CF89C289CF3A600BB7C60 /* Permissions.swift */,
 				3713292428B60163009E4AEA /* ImageMetadata.swift */,
 				374ECDC62875A3710066E9DD /* Preferences */,
 				37C6E0C928662C6800BDDA16 /* PathsSortMethods.swift */,
+				6F9AA8192962E7DA00BABAC2 /* poc.h */,
+				6F9AA81A2962E7DA00BABAC2 /* poc.m */,
 				37963F16286A0F0B00C4B72A /* DirectoryMonitor.swift */,
+				6F9AA81D2962E9E300BABAC2 /* Santander-Bridging-Header.h */,
 				CE42E24B291A920400187333 /* LoadingValueState.swift */,
 				CE1F1F6F28F7211700E44DF2 /* PathTransitioning.swift */,
 				CEFF556029153B9B002C1B99 /* DiffableDataSourceItem.swift */,
-				6F175A4D296240810093004D /* Santander-Bridging-Header.h */,
 				6F175A51296242950093004D /* WriteFile.swift */,
 			);
 			path = Other;
@@ -459,6 +459,7 @@
 				37C6E0C52865CF7C00BDDA16 /* SettingsTableViewController.swift in Sources */,
 				37C6E0CA28662C6800BDDA16 /* PathsSortMethods.swift in Sources */,
 				37934DB728707F4500D1248A /* TextFileEditorViewController.swift in Sources */,
+				6F9AA81B2962E7DB00BABAC2 /* poc.m in Sources */,
 				3713292B28B74D34009E4AEA /* ImageLocationEditorViewController.swift in Sources */,
 				3713292928B61F98009E4AEA /* ImageMetadataViewController.swift in Sources */,
 				375CF89F289D969A00BB7C60 /* PathPermissionsViewController.swift in Sources */,
@@ -493,7 +494,6 @@
 				37198B9C28721275000C8CDF /* Themes.swift in Sources */,
 				37C6E0D028673AFF00BDDA16 /* Search.swift in Sources */,
 				375CF89D289CF3A600BB7C60 /* Permissions.swift in Sources */,
-				6F175A50296240820093004D /* vm_unaligned_copy_switch_race.c in Sources */,
 				CE0D0B002906D6F300D17307 /* GoToItem.swift in Sources */,
 				CE42B204290ABB6400FD9AC9 /* AssetCatalogSidebarListView.swift in Sources */,
 				37CA828A28AA675B000236D7 /* AppInfoViewController.swift in Sources */,

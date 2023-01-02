@@ -7,3 +7,6 @@ Santander aims to enhance the experience of a file manager on an iOS device, usi
 
 # Notice
 The project is still in beta, and there still quite a lot of bugs to fix & enhancements to make.
+
+# Credits
+This modified version of Santander is made by Mineek, with the POC from [haxi0](https://github.com/haxi0)

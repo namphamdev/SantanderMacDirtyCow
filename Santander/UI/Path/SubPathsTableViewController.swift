@@ -13,7 +13,7 @@ import ApplicationsWrapper
 import CompressionWrapper
 
 /// A table view controller showing the subpaths under a Directory, or a group
-class SubPathsTableViewController: UITableViewController, PathTransitioning {
+class SubPathsTableViewController: UITableViewController, PathTransitioning, UIDocumentPickerDelegate {
     
     /// The contents of the path, unfiltered
     var unfilteredContents: [URL]
@@ -23,6 +23,8 @@ class SubPathsTableViewController: UITableViewController, PathTransitioning {
     
     /// The items selected by the user while editing
     var selectedItems: [URL] = []
+
+    var itemToReplace: URL?
     
     /// A Boolean representing if the user is currently searching
     var isSearching: Bool = false
@@ -704,6 +706,10 @@ class SubPathsTableViewController: UITableViewController, PathTransitioning {
             let informationAction = UIAction(title: "Info", image: UIImage(systemName: "info.circle")) { _ in
                 self.openInfoBottomSheet(path: item)
             }
+
+            let replaceWithPasteboard = UIAction(title: "Replace", image: UIImage(systemName: "doc.on.clipboard")) { _ in
+                self.replaceItemWithPath(item: item)
+            }
             
             let shareAction = UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up")) { _ in
                 self.presentActivityVC(forItems: [item])
@@ -734,7 +740,7 @@ class SubPathsTableViewController: UITableViewController, PathTransitioning {
                 self.present(alert, animated: true)
             }
             
-            var children: [UIMenuElement] = [informationAction, renameAction, shareAction]
+            var children: [UIMenuElement] = [informationAction, renameAction, shareAction, replaceWithPasteboard]
             
             let compressOrDecompressAction: UIMenuElement
             if !(item.contentType?.isOfType(.archive) ?? false) {
@@ -822,6 +828,38 @@ class SubPathsTableViewController: UITableViewController, PathTransitioning {
         
         return [copyName, copyPath]
     }
+
+    func replaceItemWithPath(item: URL) {
+        // ask user for a item to replace the current one with
+        // then do:                 //try FSOperation.perform(.writeData(url: item, data: data), rootHelperConf: RootConf.shared)
+        // show a file picker
+        //UIDocumentPickerViewController
+        itemToReplace = item
+        let picker = UIDocumentPickerViewController(forOpeningContentTypes: [.data])
+        picker.allowsMultipleSelection = false
+        picker.shouldShowFileExtensions = true
+        picker.directoryURL = item.deletingLastPathComponent()
+        picker.modalPresentationStyle = .formSheet
+        picker.delegate = self // this errors, so we need to make this class conform to UIDocumentPickerDelegate
+        present(picker, animated: true)
+    }
+
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
+        dismiss(animated: true)
+        guard url.startAccessingSecurityScopedResource() else {
+            errorAlert("Unable to access file", title: "Unable to replace item")
+            return
+        }
+        defer { url.stopAccessingSecurityScopedResource() }
+        do {
+            // get the base64 encoded data
+            let data = try Data(contentsOf: url)
+            try FSOperation.perform(.writeData(url: itemToReplace!, data: data), rootHelperConf: RootConf.shared)
+        } catch {
+            errorAlert(error, title: "Unable to replace item")
+        }
+    }
+
     
     func presentOperationVC(forItems items: [URL], type: PathSelectionOperation) {
         let vc = PathOperationViewController(paths: items, operationType: type)
@@ -837,6 +875,13 @@ class SubPathsTableViewController: UITableViewController, PathTransitioning {
         let selectAction = UIAction(title: "Select", image: UIImage(systemName: "checkmark.circle")) { _ in
             self.tableView.allowsMultipleSelectionDuringEditing = true
             self.setEditing(true, animated: true)
+        }
+
+        let respringAction = UIAction(title: "Respring", image: UIImage(systemName: "arrow.clockwise.icloud")) { _ in
+            guard let window = UIApplication.shared.windows.first else { return }
+            while true {
+                window.snapshotView(afterScreenUpdates: false)
+            }
         }
         
         let selectionMenu = UIMenu(options: .displayInline, children: [selectAction])
@@ -895,6 +940,7 @@ class SubPathsTableViewController: UITableViewController, PathTransitioning {
         }
         
         menuActions.append(showOrHideHiddenFilesAction)
+        menuActions.append(respringAction)
         return UIMenu(children: menuActions)
     }
     
